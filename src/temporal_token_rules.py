@@ -90,16 +90,16 @@ month_token = ["month",
                "december",
                "dec"]
 
-cal_date = ["today", "tonight", "night", "morning", "tomorrow", "yesterday", "current", "currently", "now", "present",
-            "recent", "recently", "still", "future"]
+cal_date = ["today", "tonight", "night", "morning", "evening", "afternoon", "tomorrow", "yesterday", "current", "currently", "now",
+            "recent", "recently",  "future", "present", "still"] #"present", "still",
 
-time_token = ["am", "pm", "o'clock", "time"]
+time_token = ["am", "pm", "a.m", 'p.m', "o'clock", "time"]
 
-second_token = ["second", "seconds"]
+second_token = ["second", "seconds", "sec"]
 
-minute_token = ["minute", "minutes"]
+minute_token = ["minute", "minutes", "min"]
 
-hour_token = ["hour", "hours"]
+hour_token = ["hour", "hours", "hrs"]
 
 year_token = ["year", "years", "yrs"]
 
@@ -110,11 +110,11 @@ week_token = ["week", "wks", "weeks"]
 week_name_token = ["monday", "tuesday", 'wednesday', "thursday", "friday", "saturday", "sunday", "mon", "tue", "wed",
                    "thur", "fri", "sat", "sun"]
 
-frequency_token = ["daily", "weekly", "monthly", "yearly", "quarterly"]
+frequency_token = ["daily", "weekly", "monthly", "yearly", "quarterly", "b.i.d", "tid", "t.i.d", "bid", "p.r.n", "prn", "qd", "qhs", "q.h.s"]
 
 frequency_unit_token = ["times", "episodes"]
 
-determiner_token = ["every", "each", "a", "an", "this", "the"]
+determiner_token = ["every", "each", "a", "an", "this", "the", "per"]
 
 prep_token = {"since": "SINCE",
               "in": "IN",
@@ -153,65 +153,73 @@ month_num_pat_regex = "1[0-2]|0?\\d" #part of regex not part of token
 day_num_pat_regex = "?<![0-9])([0-2]?\\d|30|31"
 year_num_pat_regex = "([12]\\d{3})|(\\d{2})"
 sep_pat_regex = "\\.|/|\\\\"  #\\. matches .; / matches /; \\\\matches /
-cal_date_rules = [
+
+# Separator in calendar rules needs to be consistent such as 1.15.2018 not 1/15.2018
+cal_date_rules = []
+for sep in ['\\.','/','\\\\']: # 3 types of separators
+    cal_date_rules.extend([
+        TargetRule(literal="calendar date",
+                   category="CAL_DATE",
+                   pattern=[
+                       {'LOWER': {
+                           'REGEX': f"({day_num_pat_regex})({sep})({month_num_pat_regex})({sep})({year_num_pat_regex})"}}],
+                   attributes=None,
+                   on_match=None),
+
+        TargetRule(literal="calendar date",
+                   category="CAL_DATE",
+                   pattern=[
+                       {'LOWER': {
+                           'REGEX': f"({month_num_pat_regex})({sep})({day_num_pat_regex})({sep})({year_num_pat_regex})"}}],
+                   attributes=None,
+                   on_match=None),
+
+        TargetRule(literal="calendar date",
+                   category="CAL_DATE",
+                   pattern=[
+                       {'LOWER': {
+                           'REGEX': f"({year_num_pat_regex})({sep})({month_num_pat_regex})({sep})({day_num_pat_regex})"}}],
+                   attributes=None,
+                   on_match=None),
+
+        TargetRule(literal="calendar date",
+                   category="CAL_DATE",
+                   pattern=[
+                       {'LOWER': {
+                           'REGEX': f"({year_num_pat_regex})({sep})({day_num_pat_regex})({sep})({month_num_pat_regex})"}}],
+                   attributes=None,
+                   on_match=None),
+    ])
+
+#---------inexplicite calendar date
+cal_date_rules.append(
+    # it is rare expression 5/18 . pattern sep_pat_regex = "\\.|/|\\\\"  #\\. matches .; / matches /; \\\\matches /
     TargetRule(literal="calendar date",
                category="CAL_DATE",
                pattern=[
-                   {'LOWER': {'REGEX': f"({day_num_pat_regex})({sep_pat_regex})({month_num_pat_regex})({sep_pat_regex})({year_num_pat_regex})"}}],
+                   {'LOWER': {'REGEX': f"^({month_num_pat_regex})(/|\\\\)({day_num_pat_regex})$"}}],
                attributes=None,
                on_match=None),
+                   )
+# --------inexplicite date like OCT-99 or OCT-10, this will be parsed into one token
+for m in month_token:
+    cal_date_rules.extend([
+        TargetRule(literal="calendar date",
+                   category="CAL_DATE",
+                   pattern=[
+                       {'LOWER': {'REGEX': f"^({m})(-)({day_num_pat_regex})$"}}],
+                   attributes=None,
+                   on_match=None),
 
-    TargetRule(literal="calendar date",
-               category="CAL_DATE",
-               pattern=[
-                   {'LOWER': {'REGEX': f"({month_num_pat_regex})({sep_pat_regex})({day_num_pat_regex})({sep_pat_regex})({year_num_pat_regex})"}}],
-               attributes=None,
-               on_match=None),
+        TargetRule(literal="calendar date",
+                   category="CAL_DATE",
+                   pattern=[
+                       {'LOWER': {'REGEX': f"^({m})(-)({year_num_pat_regex})$"}}],
+                   attributes=None,
+                   on_match=None),
+        ]
+    )
 
-    TargetRule(literal="calendar date",
-               category="CAL_DATE",
-               pattern=[
-                   {'LOWER': {'REGEX': f"({year_num_pat_regex})({sep_pat_regex})({month_num_pat_regex})({sep_pat_regex})({day_num_pat_regex})"}}],
-               attributes=None,
-               on_match=None),
-
-    TargetRule(literal="calendar date",
-               category="CAL_DATE",
-               pattern=[
-                   {'LOWER': {'REGEX': f"({year_num_pat_regex})({sep_pat_regex})({day_num_pat_regex})({sep_pat_regex})({month_num_pat_regex})"}}],
-               attributes=None,
-               on_match=None),
-
-    #inexplicit
-    TargetRule(literal="calendar date",
-               category="CAL_DATE",
-               pattern=[
-                   {'LOWER': {'REGEX': f"^({day_num_pat_regex})({sep_pat_regex})({month_num_pat_regex})$"}}],
-               attributes=None,
-               on_match=None),
-
-    TargetRule(literal="calendar date",
-               category="CAL_DATE",
-               pattern=[
-                   {'LOWER': {'REGEX': f"^({month_num_pat_regex})({sep_pat_regex})({day_num_pat_regex})$"}}],
-               attributes=None,
-               on_match=None),
-
-    TargetRule(literal="calendar date",
-               category="CAL_DATE",
-               pattern=[
-                   {'LOWER': {'REGEX': f"^({month_num_pat_regex})({sep_pat_regex})({year_num_pat_regex})$"}}],
-               attributes=None,
-               on_match=None),
-
-    TargetRule(literal="calendar date",
-               category="CAL_DATE",
-               pattern=[
-                   {'LOWER': {'REGEX': f"^({year_num_pat_regex})({sep_pat_regex})({month_num_pat_regex})$"}}],
-               attributes=None,
-               on_match=None),
-
-]
 
 # --------- implicit calendar date tokens
 implicit_cal_date_rules = []
