@@ -1,0 +1,2333 @@
+[
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(?<![0-9])([0-2]?\\d|30|31)(\\.)(1[0-2]|0?\\d)(\\.)(([12]\\d{3})|(\\d{2}))"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(1[0-2]|0?\\d)(\\.)(?<![0-9])([0-2]?\\d|30|31)(\\.)(([12]\\d{3})|(\\d{2}))"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(([12]\\d{3})|(\\d{2}))(\\.)(1[0-2]|0?\\d)(\\.)(?<![0-9])([0-2]?\\d|30|31)"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(([12]\\d{3})|(\\d{2}))(\\.)(?<![0-9])([0-2]?\\d|30|31)(\\.)(1[0-2]|0?\\d)"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(?<![0-9])([0-2]?\\d|30|31)(/)(1[0-2]|0?\\d)(/)(([12]\\d{3})|(\\d{2}))"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(1[0-2]|0?\\d)(/)(?<![0-9])([0-2]?\\d|30|31)(/)(([12]\\d{3})|(\\d{2}))"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(([12]\\d{3})|(\\d{2}))(/)(1[0-2]|0?\\d)(/)(?<![0-9])([0-2]?\\d|30|31)"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(([12]\\d{3})|(\\d{2}))(/)(?<![0-9])([0-2]?\\d|30|31)(/)(1[0-2]|0?\\d)"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(?<![0-9])([0-2]?\\d|30|31)(\\\\)(1[0-2]|0?\\d)(\\\\)(([12]\\d{3})|(\\d{2}))"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(1[0-2]|0?\\d)(\\\\)(?<![0-9])([0-2]?\\d|30|31)(\\\\)(([12]\\d{3})|(\\d{2}))"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(([12]\\d{3})|(\\d{2}))(\\\\)(1[0-2]|0?\\d)(\\\\)(?<![0-9])([0-2]?\\d|30|31)"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(([12]\\d{3})|(\\d{2}))(\\\\)(?<![0-9])([0-2]?\\d|30|31)(\\\\)(1[0-2]|0?\\d)"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(1[0-2]|0?\\d)(/|\\\\)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(month)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(month)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(months)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(months)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(january)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(january)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(jan)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(jan)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(february)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(february)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(feb)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(feb)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(march)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(march)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(mar)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(mar)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(april)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(april)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(apr)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(apr)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(may)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(may)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(june)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(june)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(jun)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(jun)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(july)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(july)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(jul)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(jul)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(august)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(august)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(aug)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(aug)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(september)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(september)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(sep)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(sep)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(october)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(october)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(oct)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(oct)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(november)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(november)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(nov)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(nov)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(december)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(december)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(dec)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "^(dec)(-)(([12]\\d{3})|(\\d{2}))$"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "today",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "today"
+      }
+    ]
+  },
+  {
+    "literal": "tonight",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "tonight"
+      }
+    ]
+  },
+  {
+    "literal": "night",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "night"
+      }
+    ]
+  },
+  {
+    "literal": "morning",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "morning"
+      }
+    ]
+  },
+  {
+    "literal": "evening",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "evening"
+      }
+    ]
+  },
+  {
+    "literal": "afternoon",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "afternoon"
+      }
+    ]
+  },
+  {
+    "literal": "tomorrow",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "tomorrow"
+      }
+    ]
+  },
+  {
+    "literal": "yesterday",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "yesterday"
+      }
+    ]
+  },
+  {
+    "literal": "current",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "current"
+      }
+    ]
+  },
+  {
+    "literal": "currently",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "currently"
+      }
+    ]
+  },
+  {
+    "literal": "now",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "now"
+      }
+    ]
+  },
+  {
+    "literal": "recent",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "recent"
+      }
+    ]
+  },
+  {
+    "literal": "recently",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "recently"
+      }
+    ]
+  },
+  {
+    "literal": "future",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "future"
+      }
+    ]
+  },
+  {
+    "literal": "present",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "present"
+      }
+    ]
+  },
+  {
+    "literal": "still",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "still"
+      }
+    ]
+  },
+  {
+    "literal": "zero",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "zero"
+      }
+    ]
+  },
+  {
+    "literal": "one",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "one"
+      }
+    ]
+  },
+  {
+    "literal": "two",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "two"
+      }
+    ]
+  },
+  {
+    "literal": "three",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "three"
+      }
+    ]
+  },
+  {
+    "literal": "four",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "four"
+      }
+    ]
+  },
+  {
+    "literal": "five",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "five"
+      }
+    ]
+  },
+  {
+    "literal": "six",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "six"
+      }
+    ]
+  },
+  {
+    "literal": "seven",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "seven"
+      }
+    ]
+  },
+  {
+    "literal": "eight",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "eight"
+      }
+    ]
+  },
+  {
+    "literal": "nine",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "nine"
+      }
+    ]
+  },
+  {
+    "literal": "ten",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "ten"
+      }
+    ]
+  },
+  {
+    "literal": "eleven",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "eleven"
+      }
+    ]
+  },
+  {
+    "literal": "twelve",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "twelve"
+      }
+    ]
+  },
+  {
+    "literal": "thirteen",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "thirteen"
+      }
+    ]
+  },
+  {
+    "literal": "fourteen",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "fourteen"
+      }
+    ]
+  },
+  {
+    "literal": "fifteen",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "fifteen"
+      }
+    ]
+  },
+  {
+    "literal": "sixteen",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "sixteen"
+      }
+    ]
+  },
+  {
+    "literal": "seventeen",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "seventeen"
+      }
+    ]
+  },
+  {
+    "literal": "eighteen",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "eighteen"
+      }
+    ]
+  },
+  {
+    "literal": "nineteen",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "nineteen"
+      }
+    ]
+  },
+  {
+    "literal": "twenty",
+    "category": "NUMBER",
+    "pattern": [
+      {
+        "LOWER": "twenty"
+      }
+    ]
+  },
+  {
+    "literal": "first",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "first"
+      }
+    ]
+  },
+  {
+    "literal": "1st",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "1st"
+      }
+    ]
+  },
+  {
+    "literal": "second",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "second"
+      }
+    ]
+  },
+  {
+    "literal": "2nd",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "2nd"
+      }
+    ]
+  },
+  {
+    "literal": "third",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "third"
+      }
+    ]
+  },
+  {
+    "literal": "3rd",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "3rd"
+      }
+    ]
+  },
+  {
+    "literal": "fourth",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "fourth"
+      }
+    ]
+  },
+  {
+    "literal": "4th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "4th"
+      }
+    ]
+  },
+  {
+    "literal": "fifth",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "fifth"
+      }
+    ]
+  },
+  {
+    "literal": "5th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "5th"
+      }
+    ]
+  },
+  {
+    "literal": "sixth",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "sixth"
+      }
+    ]
+  },
+  {
+    "literal": "6th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "6th"
+      }
+    ]
+  },
+  {
+    "literal": "seventh",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "seventh"
+      }
+    ]
+  },
+  {
+    "literal": "7th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "7th"
+      }
+    ]
+  },
+  {
+    "literal": "eighth",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "eighth"
+      }
+    ]
+  },
+  {
+    "literal": "8th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "8th"
+      }
+    ]
+  },
+  {
+    "literal": "ninth",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "ninth"
+      }
+    ]
+  },
+  {
+    "literal": "9th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "9th"
+      }
+    ]
+  },
+  {
+    "literal": "tenth",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "tenth"
+      }
+    ]
+  },
+  {
+    "literal": "10th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "10th"
+      }
+    ]
+  },
+  {
+    "literal": "11th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "11th"
+      }
+    ]
+  },
+  {
+    "literal": "12th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "12th"
+      }
+    ]
+  },
+  {
+    "literal": "13th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "13th"
+      }
+    ]
+  },
+  {
+    "literal": "14th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "14th"
+      }
+    ]
+  },
+  {
+    "literal": "15th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "15th"
+      }
+    ]
+  },
+  {
+    "literal": "16th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "16th"
+      }
+    ]
+  },
+  {
+    "literal": "17th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "17th"
+      }
+    ]
+  },
+  {
+    "literal": "18th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "18th"
+      }
+    ]
+  },
+  {
+    "literal": "19th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "19th"
+      }
+    ]
+  },
+  {
+    "literal": "20th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "20th"
+      }
+    ]
+  },
+  {
+    "literal": "21st",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "21st"
+      }
+    ]
+  },
+  {
+    "literal": "22nd",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "22nd"
+      }
+    ]
+  },
+  {
+    "literal": "23rd",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "23rd"
+      }
+    ]
+  },
+  {
+    "literal": "24th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "24th"
+      }
+    ]
+  },
+  {
+    "literal": "25th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "25th"
+      }
+    ]
+  },
+  {
+    "literal": "26th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "26th"
+      }
+    ]
+  },
+  {
+    "literal": "27th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "27th"
+      }
+    ]
+  },
+  {
+    "literal": "28th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "28th"
+      }
+    ]
+  },
+  {
+    "literal": "29th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "29th"
+      }
+    ]
+  },
+  {
+    "literal": "30th",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "30th"
+      }
+    ]
+  },
+  {
+    "literal": "31st",
+    "category": "ORDINAL",
+    "pattern": [
+      {
+        "LOWER": "31st"
+      }
+    ]
+  },
+  {
+    "literal": "am",
+    "category": "TIME",
+    "pattern": [
+      {
+        "LOWER": "am"
+      }
+    ]
+  },
+  {
+    "literal": "pm",
+    "category": "TIME",
+    "pattern": [
+      {
+        "LOWER": "pm"
+      }
+    ]
+  },
+  {
+    "literal": "a.m",
+    "category": "TIME",
+    "pattern": [
+      {
+        "LOWER": "a.m"
+      }
+    ]
+  },
+  {
+    "literal": "p.m",
+    "category": "TIME",
+    "pattern": [
+      {
+        "LOWER": "p.m"
+      }
+    ]
+  },
+  {
+    "literal": "o'clock",
+    "category": "TIME",
+    "pattern": [
+      {
+        "LOWER": "o'clock"
+      }
+    ]
+  },
+  {
+    "literal": "time",
+    "category": "TIME",
+    "pattern": [
+      {
+        "LOWER": "time"
+      }
+    ]
+  },
+  {
+    "literal": "second",
+    "category": "SECOND",
+    "pattern": [
+      {
+        "LOWER": "second"
+      }
+    ]
+  },
+  {
+    "literal": "seconds",
+    "category": "SECOND",
+    "pattern": [
+      {
+        "LOWER": "seconds"
+      }
+    ]
+  },
+  {
+    "literal": "sec",
+    "category": "SECOND",
+    "pattern": [
+      {
+        "LOWER": "sec"
+      }
+    ]
+  },
+  {
+    "literal": "minute",
+    "category": "MINUTE",
+    "pattern": [
+      {
+        "LOWER": "minute"
+      }
+    ]
+  },
+  {
+    "literal": "minutes",
+    "category": "MINUTE",
+    "pattern": [
+      {
+        "LOWER": "minutes"
+      }
+    ]
+  },
+  {
+    "literal": "min",
+    "category": "MINUTE",
+    "pattern": [
+      {
+        "LOWER": "min"
+      }
+    ]
+  },
+  {
+    "literal": "hour",
+    "category": "HOUR",
+    "pattern": [
+      {
+        "LOWER": "hour"
+      }
+    ]
+  },
+  {
+    "literal": "hours",
+    "category": "HOUR",
+    "pattern": [
+      {
+        "LOWER": "hours"
+      }
+    ]
+  },
+  {
+    "literal": "hrs",
+    "category": "HOUR",
+    "pattern": [
+      {
+        "LOWER": "hrs"
+      }
+    ]
+  },
+  {
+    "literal": "days",
+    "category": "DAY",
+    "pattern": [
+      {
+        "LOWER": "days"
+      }
+    ]
+  },
+  {
+    "literal": "day",
+    "category": "DAY",
+    "pattern": [
+      {
+        "LOWER": "day"
+      }
+    ]
+  },
+  {
+    "literal": "week",
+    "category": "WEEK",
+    "pattern": [
+      {
+        "LOWER": "week"
+      }
+    ]
+  },
+  {
+    "literal": "wks",
+    "category": "WEEK",
+    "pattern": [
+      {
+        "LOWER": "wks"
+      }
+    ]
+  },
+  {
+    "literal": "weeks",
+    "category": "WEEK",
+    "pattern": [
+      {
+        "LOWER": "weeks"
+      }
+    ]
+  },
+  {
+    "literal": "monday",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "monday"
+      }
+    ]
+  },
+  {
+    "literal": "tuesday",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "tuesday"
+      }
+    ]
+  },
+  {
+    "literal": "wednesday",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "wednesday"
+      }
+    ]
+  },
+  {
+    "literal": "thursday",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "thursday"
+      }
+    ]
+  },
+  {
+    "literal": "friday",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "friday"
+      }
+    ]
+  },
+  {
+    "literal": "saturday",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "saturday"
+      }
+    ]
+  },
+  {
+    "literal": "sunday",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "sunday"
+      }
+    ]
+  },
+  {
+    "literal": "mon",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "mon"
+      }
+    ]
+  },
+  {
+    "literal": "tue",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "tue"
+      }
+    ]
+  },
+  {
+    "literal": "wed",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "wed"
+      }
+    ]
+  },
+  {
+    "literal": "thur",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "thur"
+      }
+    ]
+  },
+  {
+    "literal": "fri",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "fri"
+      }
+    ]
+  },
+  {
+    "literal": "sat",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "sat"
+      }
+    ]
+  },
+  {
+    "literal": "sun",
+    "category": "CAL_DATE",
+    "pattern": [
+      {
+        "LOWER": "sun"
+      }
+    ]
+  },
+  {
+    "literal": "month",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "month"
+      }
+    ]
+  },
+  {
+    "literal": "months",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "months"
+      }
+    ]
+  },
+  {
+    "literal": "january",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "january"
+      }
+    ]
+  },
+  {
+    "literal": "jan",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "jan"
+      }
+    ]
+  },
+  {
+    "literal": "february",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "february"
+      }
+    ]
+  },
+  {
+    "literal": "feb",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "feb"
+      }
+    ]
+  },
+  {
+    "literal": "march",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "march"
+      }
+    ]
+  },
+  {
+    "literal": "mar",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "mar"
+      }
+    ]
+  },
+  {
+    "literal": "april",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "april"
+      }
+    ]
+  },
+  {
+    "literal": "apr",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "apr"
+      }
+    ]
+  },
+  {
+    "literal": "may",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "may"
+      }
+    ]
+  },
+  {
+    "literal": "june",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "june"
+      }
+    ]
+  },
+  {
+    "literal": "jun",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "jun"
+      }
+    ]
+  },
+  {
+    "literal": "july",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "july"
+      }
+    ]
+  },
+  {
+    "literal": "jul",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "jul"
+      }
+    ]
+  },
+  {
+    "literal": "august",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "august"
+      }
+    ]
+  },
+  {
+    "literal": "aug",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "aug"
+      }
+    ]
+  },
+  {
+    "literal": "september",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "september"
+      }
+    ]
+  },
+  {
+    "literal": "sep",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "sep"
+      }
+    ]
+  },
+  {
+    "literal": "october",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "october"
+      }
+    ]
+  },
+  {
+    "literal": "oct",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "oct"
+      }
+    ]
+  },
+  {
+    "literal": "november",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "november"
+      }
+    ]
+  },
+  {
+    "literal": "nov",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "nov"
+      }
+    ]
+  },
+  {
+    "literal": "december",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "december"
+      }
+    ]
+  },
+  {
+    "literal": "dec",
+    "category": "MONTH",
+    "pattern": [
+      {
+        "LOWER": "dec"
+      }
+    ]
+  },
+  {
+    "literal": "year",
+    "category": "YEAR",
+    "pattern": [
+      {
+        "LOWER": "year"
+      }
+    ]
+  },
+  {
+    "literal": "years",
+    "category": "YEAR",
+    "pattern": [
+      {
+        "LOWER": "years"
+      }
+    ]
+  },
+  {
+    "literal": "yrs",
+    "category": "YEAR",
+    "pattern": [
+      {
+        "LOWER": "yrs"
+      }
+    ]
+  },
+  {
+    "literal": "daily",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "daily"
+      }
+    ]
+  },
+  {
+    "literal": "weekly",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "weekly"
+      }
+    ]
+  },
+  {
+    "literal": "monthly",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "monthly"
+      }
+    ]
+  },
+  {
+    "literal": "yearly",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "yearly"
+      }
+    ]
+  },
+  {
+    "literal": "quarterly",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "quarterly"
+      }
+    ]
+  },
+  {
+    "literal": "b.i.d",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "b.i.d"
+      }
+    ]
+  },
+  {
+    "literal": "tid",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "tid"
+      }
+    ]
+  },
+  {
+    "literal": "t.i.d",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "t.i.d"
+      }
+    ]
+  },
+  {
+    "literal": "bid",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "bid"
+      }
+    ]
+  },
+  {
+    "literal": "p.r.n",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "p.r.n"
+      }
+    ]
+  },
+  {
+    "literal": "prn",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "prn"
+      }
+    ]
+  },
+  {
+    "literal": "qd",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "qd"
+      }
+    ]
+  },
+  {
+    "literal": "qhs",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "qhs"
+      }
+    ]
+  },
+  {
+    "literal": "q.h.s",
+    "category": "FREQUENCY",
+    "pattern": [
+      {
+        "LOWER": "q.h.s"
+      }
+    ]
+  },
+  {
+    "literal": "times",
+    "category": "FREQUENCY_UNIT",
+    "pattern": [
+      {
+        "LOWER": "times"
+      }
+    ]
+  },
+  {
+    "literal": "episodes",
+    "category": "FREQUENCY_UNIT",
+    "pattern": [
+      {
+        "LOWER": "episodes"
+      }
+    ]
+  },
+  {
+    "literal": "last",
+    "category": "LAST",
+    "pattern": [
+      {
+        "LOWER": "last"
+      }
+    ]
+  },
+  {
+    "literal": "past",
+    "category": "PAST",
+    "pattern": [
+      {
+        "LOWER": "past"
+      }
+    ]
+  },
+  {
+    "literal": "next",
+    "category": "NEXT",
+    "pattern": [
+      {
+        "LOWER": "next"
+      }
+    ]
+  },
+  {
+    "literal": "ago",
+    "category": "AGO",
+    "pattern": [
+      {
+        "LOWER": "ago"
+      }
+    ]
+  },
+  {
+    "literal": "end",
+    "category": "END",
+    "pattern": [
+      {
+        "LOWER": "end"
+      }
+    ]
+  },
+  {
+    "literal": "beginning",
+    "category": "BEGIN",
+    "pattern": [
+      {
+        "LOWER": "beginning"
+      }
+    ]
+  },
+  {
+    "literal": "since",
+    "category": "SINCE",
+    "pattern": [
+      {
+        "LOWER": "since"
+      }
+    ]
+  },
+  {
+    "literal": "in",
+    "category": "IN",
+    "pattern": [
+      {
+        "LOWER": "in"
+      }
+    ]
+  },
+  {
+    "literal": "at",
+    "category": "AT",
+    "pattern": [
+      {
+        "LOWER": "at"
+      }
+    ]
+  },
+  {
+    "literal": "on",
+    "category": "ON",
+    "pattern": [
+      {
+        "LOWER": "on"
+      }
+    ]
+  },
+  {
+    "literal": "about",
+    "category": "ABOUT",
+    "pattern": [
+      {
+        "LOWER": "about"
+      }
+    ]
+  },
+  {
+    "literal": "within",
+    "category": "WITHIN",
+    "pattern": [
+      {
+        "LOWER": "within"
+      }
+    ]
+  },
+  {
+    "literal": "from",
+    "category": "FROM",
+    "pattern": [
+      {
+        "LOWER": "from"
+      }
+    ]
+  },
+  {
+    "literal": "to",
+    "category": "TO",
+    "pattern": [
+      {
+        "LOWER": "to"
+      }
+    ]
+  },
+  {
+    "literal": "till",
+    "category": "TILL",
+    "pattern": [
+      {
+        "LOWER": "till"
+      }
+    ]
+  },
+  {
+    "literal": "until",
+    "category": "UNTIL",
+    "pattern": [
+      {
+        "LOWER": "until"
+      }
+    ]
+  },
+  {
+    "literal": "of",
+    "category": "OF",
+    "pattern": [
+      {
+        "LOWER": "of"
+      }
+    ]
+  },
+  {
+    "literal": "during",
+    "category": "DURING",
+    "pattern": [
+      {
+        "LOWER": "during"
+      }
+    ]
+  },
+  {
+    "literal": "or",
+    "category": "OR",
+    "pattern": [
+      {
+        "LOWER": "or"
+      }
+    ]
+  },
+  {
+    "literal": "every",
+    "category": "DETERMINER",
+    "pattern": [
+      {
+        "LOWER": "every"
+      }
+    ]
+  },
+  {
+    "literal": "each",
+    "category": "DETERMINER",
+    "pattern": [
+      {
+        "LOWER": "each"
+      }
+    ]
+  },
+  {
+    "literal": "a",
+    "category": "DETERMINER",
+    "pattern": [
+      {
+        "LOWER": "a"
+      }
+    ]
+  },
+  {
+    "literal": "an",
+    "category": "DETERMINER",
+    "pattern": [
+      {
+        "LOWER": "an"
+      }
+    ]
+  },
+  {
+    "literal": "this",
+    "category": "DETERMINER",
+    "pattern": [
+      {
+        "LOWER": "this"
+      }
+    ]
+  },
+  {
+    "literal": "the",
+    "category": "DETERMINER",
+    "pattern": [
+      {
+        "LOWER": "the"
+      }
+    ]
+  },
+  {
+    "literal": "per",
+    "category": "DETERMINER",
+    "pattern": [
+      {
+        "LOWER": "per"
+      }
+    ]
+  }
+]

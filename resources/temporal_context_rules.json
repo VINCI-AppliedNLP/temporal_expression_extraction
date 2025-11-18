@@ -1,0 +1,7659 @@
+[
+  {
+    "literal": "current",
+    "category": "CONTAINS",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "currently",
+    "category": "CONTAINS",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "now",
+    "category": "CONTAINS",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "recent",
+    "category": "CONTAINS",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "recently",
+    "category": "CONTAINS",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "future",
+    "category": "CONTAINS",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "present",
+    "category": "CONTAINS",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "still",
+    "category": "CONTAINS",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(1[0-2]|0?\\d)(/|\\\\)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(month)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(months)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(january)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(jan)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(february)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(feb)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(march)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(mar)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(april)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(apr)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(may)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(june)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(jun)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(july)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(jul)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(august)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(aug)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(september)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(sep)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(october)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(oct)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(november)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(nov)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(december)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(dec)(-)(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "since",
+            "in",
+            "within",
+            "during"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^0[1-9]$)|(^[12][0-9]$)|(^3[01]$))"
+        },
+        "OP": "!"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "in year",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "on going",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "ON"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-"
+      },
+      {
+        "LOWER": "going",
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "month ago",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "!"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "almost",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "almost",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "duration",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "duration",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "vague date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "couple of days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "the",
+            "a"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "few",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "for the past",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "2 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "two days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "duration",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "+"
+      },
+      {
+        "LOWER": "one",
+        "OP": "+"
+      },
+      {
+        "LOWER": "half",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "in year",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[1-9]/[1-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "another week",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "another",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "1 to 3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "# one to three days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": " # 1-3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "at least 3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "at least three days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "more than (less than) 3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "more than three days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "duration",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "duration",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "vague date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "couple of days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "the",
+            "a"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "few",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "for the past",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "2 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "two days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "duration",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "+"
+      },
+      {
+        "LOWER": "one",
+        "OP": "+"
+      },
+      {
+        "LOWER": "half",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "in year",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[1-9]/[1-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "another week",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "another",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "1 to 3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "# one to three days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": " # 1-3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "at least 3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "at least three days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "more than (less than) 3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "more than three days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "duration",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "duration",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "vague date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "couple of days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "the",
+            "a"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "few",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "for the past",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "2 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "two days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "duration",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "+"
+      },
+      {
+        "LOWER": "one",
+        "OP": "+"
+      },
+      {
+        "LOWER": "half",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "in year",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[1-9]/[1-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "another week",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "another",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "1 to 3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "# one to three days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": " # 1-3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "at least 3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "at least three days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "more than (less than) 3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "more than three days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "duration",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "duration",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "vague date",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "couple of days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "the",
+            "a"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "few",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "for the past",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "2 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "two days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "duration",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "+"
+      },
+      {
+        "LOWER": "one",
+        "OP": "+"
+      },
+      {
+        "LOWER": "half",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "in year",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[1-9]/[1-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "another week",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "another",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "1 to 3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "# one to three days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": " # 1-3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "at least 3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "at least three days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "more than (less than) 3 days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "more than three days",
+    "category": "CONTAINS",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "today",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "tonight",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "night",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "morning",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "evening",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "afternoon",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "tomorrow",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "yesterday",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(?<![0-9])([0-2]?\\d|30|31)(\\.)(1[0-2]|0?\\d)(\\.)(([12]\\d{3})|(\\d{2}))"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(1[0-2]|0?\\d)(\\.)(?<![0-9])([0-2]?\\d|30|31)(\\.)(([12]\\d{3})|(\\d{2}))"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(([12]\\d{3})|(\\d{2}))(\\.)(1[0-2]|0?\\d)(\\.)(?<![0-9])([0-2]?\\d|30|31)"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(([12]\\d{3})|(\\d{2}))(\\.)(?<![0-9])([0-2]?\\d|30|31)(\\.)(1[0-2]|0?\\d)"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(?<![0-9])([0-2]?\\d|30|31)(/)(1[0-2]|0?\\d)(/)(([12]\\d{3})|(\\d{2}))"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(1[0-2]|0?\\d)(/)(?<![0-9])([0-2]?\\d|30|31)(/)(([12]\\d{3})|(\\d{2}))"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(([12]\\d{3})|(\\d{2}))(/)(1[0-2]|0?\\d)(/)(?<![0-9])([0-2]?\\d|30|31)"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(([12]\\d{3})|(\\d{2}))(/)(?<![0-9])([0-2]?\\d|30|31)(/)(1[0-2]|0?\\d)"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(?<![0-9])([0-2]?\\d|30|31)(\\\\)(1[0-2]|0?\\d)(\\\\)(([12]\\d{3})|(\\d{2}))"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(1[0-2]|0?\\d)(\\\\)(?<![0-9])([0-2]?\\d|30|31)(\\\\)(([12]\\d{3})|(\\d{2}))"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(([12]\\d{3})|(\\d{2}))(\\\\)(1[0-2]|0?\\d)(\\\\)(?<![0-9])([0-2]?\\d|30|31)"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(([12]\\d{3})|(\\d{2}))(\\\\)(?<![0-9])([0-2]?\\d|30|31)(\\\\)(1[0-2]|0?\\d)"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(1[0-2]|0?\\d)(/|\\\\)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(month)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(months)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(january)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(jan)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(february)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(feb)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(march)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(mar)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(april)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(apr)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(may)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(june)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(jun)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(july)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(jul)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(august)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(aug)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(september)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(sep)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(october)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(oct)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(november)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(nov)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(december)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "on",
+            "at",
+            "of"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "^(dec)(-)(?<![0-9])([0-2]?\\d|30|31)$"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DURATION"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "OVERLAP",
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "date",
+    "category": "BEGINS_ON",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "from"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "date",
+    "category": "BEGINS_ON",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "date",
+    "category": "BEGINS_ON",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "from"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "date",
+    "category": "BEGINS_ON",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "date",
+    "category": "BEGINS_ON",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "from"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "date",
+    "category": "BEGINS_ON",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "date",
+    "category": "BEGINS_ON",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "from"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "date",
+    "category": "BEGINS_ON",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "date",
+    "category": "ENDS_ON",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "ENDS_ON",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "date",
+    "category": "ENDS_ON",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "ENDS_ON",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "date",
+    "category": "ENDS_ON",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "ENDS_ON",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "date",
+    "category": "ENDS_ON",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  },
+  {
+    "literal": "calendar date",
+    "category": "ENDS_ON",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ],
+    "direction": "BIDIRECTIONAL",
+    "max_scope": 30,
+    "allowed_types": [],
+    "metadata": {
+      "NER": "DATE"
+    }
+  }
+]

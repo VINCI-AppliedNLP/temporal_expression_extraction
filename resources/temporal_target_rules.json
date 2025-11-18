@@ -1,0 +1,11498 @@
+[
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "CAL_DATE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^0[1-9]$)|(^[12][0-9]$)|(^3[01]$))"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^(?<![0-9])([0-2]?\\d|30|31)\\W(([12]\\d{3})|(\\d{2}))$"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "((^0[1-9]$)|(^[12][0-9]$)|(^3[01]$))"
+        },
+        "OP": "*"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "ORDINAL"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "*"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "ORDINAL"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "((^1[0-2]$)|(^0?\\d$))"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^0[1-9]$)|(^[12][0-9]$)|(^3[01]$))"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^1[0-2]$)|(^0?\\d$))"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^0[1-9]$)|(^[12][0-9]$)|(^3[01]$))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": "on",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^1[0-2]$)|(^0?\\d$))"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^0[1-9]$)|(^[12][0-9]$)|(^3[01]$))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "((^0[1-9]$)|(^[12][0-9]$)|(^3[01]$))"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": "-",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(month|months|january|jan|february|feb|march|mar|april|apr|may|june|jun|july|jul|august|aug|september|sep|october|oct|november|nov|december|dec)[-](([12]\\d{3})|(\\d{2}))"
+        }
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(month|months|january|jan|february|feb|march|mar|april|apr|may|june|jun|july|jul|august|aug|september|sep|october|oct|november|nov|december|dec)[-](?<![0-9])([0-2]?\\d|30|31)"
+        }
+      },
+      {
+        "TEXT": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "((^0[1-9]$)|(^[12][0-9]$)|(^3[01]$))"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": "-",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(month|months|january|jan|february|feb|march|mar|april|apr|may|june|jun|july|jul|august|aug|september|sep|october|oct|november|nov|december|dec)"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": "-",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(month|months|january|jan|february|feb|march|mar|april|apr|may|june|jun|july|jul|august|aug|september|sep|october|oct|november|nov|december|dec)"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": "-",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(month|months|january|jan|february|feb|march|mar|april|apr|may|june|jun|july|jul|august|aug|september|sep|october|oct|november|nov|december|dec)[-](?<![0-9])([0-2]?\\d|30|31)"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "((^0[1-9]$)|(^[12][0-9]$)|(^3[01]$))"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^\\.$)|(^/$)|(^\\\\$))"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(month|months|january|jan|february|feb|march|mar|april|apr|may|june|jun|july|jul|august|aug|september|sep|october|oct|november|nov|december|dec)(\\.|/|\\\\)(([12]\\d{3})|(\\d{2}))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^\\.$)|(^/$)|(^\\\\$))"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "REGEX": "(month|months|january|jan|february|feb|march|mar|april|apr|may|june|jun|july|jul|august|aug|september|sep|october|oct|november|nov|december|dec)(\\.|/|\\\\)(?<![0-9])([0-2]?\\d|30|31)"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "REGEX": "(month|months|january|jan|february|feb|march|mar|april|apr|may|june|jun|july|jul|august|aug|september|sep|october|oct|november|nov|december|dec)(\\.|/|\\\\)(?<![0-9])([0-2]?\\d|30|31)"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^\\.$)|(^/$)|(^\\\\$))"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^0[1-9]$)|(^[12][0-9]$)|(^3[01]$))"
+        },
+        "OP": "!"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^0[1-9]$)|(^[12][0-9]$)|(^3[01]$))"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^0[1-9]$)|(^[12][0-9]$)|(^3[01]$))"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "ORDINAL"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "*"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "ORDINAL"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "END"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "*"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "END"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "*"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "ON"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-"
+      },
+      {
+        "LOWER": "going"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "ORDINAL"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "labor",
+            "memorial",
+            "independent",
+            "thanksgiving",
+            "christmas",
+            "president",
+            "columbus"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "day",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": "new",
+        "OP": "+"
+      },
+      {
+        "LOWER": "year",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": "present",
+        "OP": "+"
+      },
+      {
+        "LOWER": "time",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "hospital",
+            "postoperative",
+            "operation",
+            "op",
+            "operative"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "day",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": "day",
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "+"
+      },
+      {
+        "LOWER": "life",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": "the",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "END"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": "the",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "END"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": "the",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "END"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": "the",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "END"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": "the",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "END"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": "the",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "END"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": "the",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "END"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": "the",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between"
+          ]
+        },
+        "OP": "!"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "calendar date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "until",
+            "till"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "!"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OR"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "WITHIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "END"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "AT"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "UNTIL"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "BEGIN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "OF"
+        },
+        "OP": "+"
+      },
+      {
+        "IS_PUNCT": true,
+        "OP": "*"
+      },
+      {
+        "IS_SPACE": true,
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "vague date",
+    "category": "DATE",
+    "pattern": [
+      {
+        "_": {
+          "concept_tag": "IN"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DETERMINER"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "the",
+            "a"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "few",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "+"
+      },
+      {
+        "LOWER": "one",
+        "OP": "+"
+      },
+      {
+        "LOWER": "half",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[1-9]/[1-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "another",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "SECOND"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "the",
+            "a"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "few",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "+"
+      },
+      {
+        "LOWER": "one",
+        "OP": "+"
+      },
+      {
+        "LOWER": "half",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[1-9]/[1-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "another",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MINUTE"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "the",
+            "a"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "few",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "+"
+      },
+      {
+        "LOWER": "one",
+        "OP": "+"
+      },
+      {
+        "LOWER": "half",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[1-9]/[1-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "another",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "HOUR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "the",
+            "a"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "few",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "+"
+      },
+      {
+        "LOWER": "one",
+        "OP": "+"
+      },
+      {
+        "LOWER": "half",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[1-9]/[1-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "another",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "TIME"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "the",
+            "a"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "few",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "+"
+      },
+      {
+        "LOWER": "one",
+        "OP": "+"
+      },
+      {
+        "LOWER": "half",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[1-9]/[1-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "another",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "DAY"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "the",
+            "a"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "few",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "+"
+      },
+      {
+        "LOWER": "one",
+        "OP": "+"
+      },
+      {
+        "LOWER": "half",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[1-9]/[1-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "another",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "WEEK"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "the",
+            "a"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "few",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "+"
+      },
+      {
+        "LOWER": "one",
+        "OP": "+"
+      },
+      {
+        "LOWER": "half",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[1-9]/[1-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "another",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "an",
+            "a"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "the",
+            "a"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "few",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "sometime",
+            "later",
+            "earlier"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "the",
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "this",
+            "the",
+            "next",
+            "last",
+            "past",
+            "previous",
+            "coming",
+            "following",
+            "several",
+            "couple"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "of",
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "+"
+      },
+      {
+        "LOWER": "one",
+        "OP": "+"
+      },
+      {
+        "LOWER": "half",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "and",
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[1-9]/[1-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "another",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "to",
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost",
+            "from"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "-",
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": "at",
+        "OP": "+"
+      },
+      {
+        "LOWER": "least",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "TEXT": {
+          "REGEX": "^[0-9]|[0-9][0-9]$"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "more",
+            "less"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "LOWER": "than",
+        "OP": "+"
+      },
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during"
+          ]
+        },
+        "OP": "*"
+      },
+      {
+        "_": {
+          "concept_tag": "NUMBER"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "YEAR"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "MONTH"
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "!"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": {
+          "IN": [
+            "for",
+            "about",
+            "in",
+            "during",
+            "between",
+            "nearly",
+            "almost"
+          ]
+        },
+        "OP": "+"
+      },
+      {
+        "TEXT": {
+          "REGEX": "((^[12]\\d{3}$)|(^\\d{2}$))"
+        },
+        "OP": "+"
+      },
+      {
+        "_": {
+          "concept_tag": "AGO"
+        },
+        "OP": "!"
+      }
+    ]
+  },
+  {
+    "literal": "duration",
+    "category": "DURATION",
+    "pattern": [
+      {
+        "LOWER": "overnight",
+        "OP": "+"
+      }
+    ]
+  }
+]
